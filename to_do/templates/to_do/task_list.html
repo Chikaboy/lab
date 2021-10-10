@@ -6,7 +6,7 @@
 
 <div id="search-add-wrapper" class="search">
 
-<a id="add-link" href="{% url 'task-create' %}">&#x2b;</a>
+<a id="add-link" href="{% url 'task-create' %}"><i class="fas fa-plus-circle"></i></a>
 </div>
 
 
@@ -18,19 +18,19 @@
                 <div class="task-complete-icon"></div>
                 <i><s><a href="{% url 'task-edit' task.id %}">{{task}}</a></s></i>
             </div>
-            <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a>
+            <a class="delete-link" href="{% url 'task-delete' task.id %}">delete</a>
             {% elif task.status == 'PL' %}
             <div class="task-title">
                 <div class="task-incomplete-icon"></div>
                 <a href="{% url 'task-edit' task.id %}">{{task}}</a>
             </div>
-            <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a>
+            <a class="delete-link" href="{% url 'task-delete' task.id %}">delete</a>
         {% elif task.status == 'NOT' %}
             <div class="task-title">
                 <div class="task-cancelled-icon"></div>
                 <a href="{% url 'task-edit' task.id %}">{{task}}</a>
             </div>
-            <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a>
+            <a class="delete-link" href="{% url 'task-delete' task.id %}">delete</a>
 
         {% endif %}
 
