@@ -1,7 +1,8 @@
 body {
        background-color: #FAFAFA;
        font-family: 'Nunito', sans-serif;
-       padding-top: 50px;
+       padding: 50px;
+       
         }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,6 +22,11 @@ a, p {
         text-align: center;
         margin-top: 20px;
         padding-top: 20px;
+}
+
+.check{
+        padding: 8px;
+        font-size: 20px;
 }
 
 .header-bar {
@@ -60,42 +66,19 @@ a, p {
             color: #4b5156;
             margin-left: 10px;
 }
-.task-complete-icon {
-
-            height: 20px;
-            width: 20px;
-            background-color: green;
-            
-}
-
-.task-incomplete-icon {
-            height: 20px;
-            width: 20px;
-            background-color: blue;
-
-}
-
-.task-cancelled-icon {
-            height: 20px;
-            width: 20px;
-            background-color: red;
-
-}
 
 .delete-link{
             text-decoration: none;
-            font-weight: 900;
+            font-weight: 300;
+            font-size: 25px;
             color: #E52020; 
             line-height: 0;
 }
 
-#search-add-wrapper {
-            display: flex;
-            justify-decoration: space-between;
-            align-items: center;
-            padding: 10px;
+.plus{
+        text-align: center;
+        margin: 25px;
 }
-
 #add-link {
             width: 100%;
             text-align: center;
